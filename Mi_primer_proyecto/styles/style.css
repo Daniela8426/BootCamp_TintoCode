@@ -1,7 +1,76 @@
-body{
+*{
     margin: 0;
+    padding: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#menu-navegacion{
+    background: black;
+}
+#menu-navegacion > ul {
+    list-style: none;
 }
 
+#menu-navegacion > ul > li {
+    display: inline-block;
+}
+
+#menu-navegacion > ul > li > a{
+    color: blanchedalmond;
+    text-decoration: none;
+    display: block;
+    padding: 20px 80px;
+    font-size: 18px;
+}
+/* 
+#menu-navegacion > ul > li > a:hover{
+    background-color: cadetblue;
+} */
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    /* text-transform: none; -igual como fue escrito*/
+    /* text-transform: capitalize;  -Primera de cada palabra en mayuscula*/
+    /* text-transform: lowercase; -Todo en minuscula*/
+    padding: 10px;
+    font-size: 2.5em;
+
+}
+.contenedor{
+    background-color: cadetblue;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenedor-info{
+    background: lawngreen;
+    width: 80%;
+    text-align: center;
+    padding: 10px 50px;
+
+}
+.contenedor-info > h2{
+    font-size: 2rem;
+    grid-column: 1/3;
+}
+
+.contenedor-info > h4{
+    font-style:oblique;
+    grid-column: 1/3;
+}
+.contenedor-info > img{
+    width: 40%;
+    height: 70%;
+    padding: 20px;
+    border-radius: 50%;
+}
+.contenedor-info > p{
+    text-align: justify;
+}
+.contenedor_dos{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: lightblue;
+}
 .contenedor_tres{
     display: grid;
     grid-template-columns: 1fr 1fr;
