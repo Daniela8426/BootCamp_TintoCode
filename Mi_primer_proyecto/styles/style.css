@@ -14,10 +14,10 @@ body{
 #menu-navegacion > ul {
     list-style: none;
 }
-
+/* 
 #menu-navegacion > ul > li {
     display: inline-block;
-}
+} */
 
 #menu-navegacion > ul > li > a{
     color: blanchedalmond;
@@ -30,6 +30,10 @@ body{
 #menu-navegacion > ul > li > a:hover{
     background-color: cadetblue;
 } */
+.flex{
+    display: flex;
+}
+
 h1{
     text-align: center;
     text-transform: uppercase;
@@ -76,6 +80,11 @@ h1{
     background-color: rgba(173, 216, 230, 0.466);
     padding: 20px 50px;
 }
+
+.contenedor_dos .habilidades ul > li {
+    color: rgb(235, 20, 20);
+}
+
 .sobre_mi, .links{
     grid-column: 1/3;
 }
@@ -90,4 +99,9 @@ h1{
 .sobre_mi > p{
     text-align: justify;
     padding: 10px 0px;
+}
+
+footer{
+    text-align: center;
+
 }
