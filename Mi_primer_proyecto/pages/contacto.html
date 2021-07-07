@@ -4,16 +4,98 @@
     <meta charset="UTF-8">
     <meta name="author" content="Daniela Nieto">
     <meta name="description" content="Dejame un mensaje">
-    <link rel="shortcut icon" href="./image/square-logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./../image/square-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./../styles/style.css">
     <title>Contáctame</title>
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav id="menu-navegacion">
+        <ul class="navegacion flex">
             <li><a href="./../index.html">Inicio</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
         </ul>
     </nav>
     
+    <div class="contacto">
+        <div class="derecha">
+            <img src="../image/contacto.png">
+          
+        </div>
+        <div class="izquierda">
+            <h1>Dejame un Mensaje</h1>
+            <form action="" method="post">
+                <div class="nombre">
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                    </div>
+                    <div>
+                        <input type="text" name="nombre_completo" id="nombre" required>
+                    </div>
+                </div>
+                
+                <div class="celular">
+                    <div>
+                        <label for="celular">Celular: </label>
+                    </div>
+                    <div>
+                        <input type="number" name="celular" id="celular" required>
+                    </div>
+                </div>
+    
+                <div class="correo">
+                    <div>
+                        <label for="correo">Correo: </label>
+                    </div>
+                    <div>
+                        <input type="email" name="correo" id="correo" required>
+                    </div>
+                </div><br>
+    
+                <div class="genero">
+                    <div>
+                        <label for="genero">Género: </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mujer" name="genero" value="Mujer" required> <!-- el requerido valida según el name del input-->
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" id="hombre" name="genero" value="Hombre">
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" id="no_decir" name="genero" value="no_decir">
+                        <label for="no_decir">No Decir</label>
+                    </div>
+                </div><br>
+    
+                <div class="lenguaje">
+                    <div>
+                        <label> Lenguaje de Programación Favorito: </label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="php" name="php" value="php">
+                        <label for="php">PHP</label>
+                        <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                        <label for="javascript">JavaScript</label>
+                        <input type="checkbox" id="python" name="python" value="python">
+                        <label for="python">Python</label>
+                    </div>
+                </div><br>
+    
+                <div class="mensaje">
+                    <div>
+                        <label for="">Mensaje: </label>
+                    </div>
+    
+                    <div>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="2"required></textarea>
+                    </div>
+                </div><br>
+    
+                <div class="boton">
+                    <button>Enviar</button>
+                </div>
+    
+            </form>
+        </div>
+    </div>
 </body>
 </html>
