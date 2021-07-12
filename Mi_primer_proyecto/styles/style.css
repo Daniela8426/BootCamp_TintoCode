@@ -165,3 +165,38 @@ button:hover, button:active, button:focus {
     outline: none;
     border-color: #fbcf34;
  }
+
+
+
+/* Animales favoritos */
+
+.flex_contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 10%;
+}
+
+.flex_contenedor div{
+    background-color: #ffffff;
+    width: 200px;
+    margin: 20px 30px;
+    font-size: 20px;
+}
+
+.flex_contenedor div img{
+    margin: 0;
+    width: 100%;
+}
+.flex_contenedor div h2{
+    text-align: center;
+}
+
+.flex_contenedor div strong{
+  padding: 0px 20px;
+  font-size: 1rem;
+}
+.flex_contenedor div label{
+    padding: 20px;
+    font-size: 15px;
+  }
+
