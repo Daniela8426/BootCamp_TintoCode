@@ -1,3 +1,10 @@
+/* Orden: 
+    1.Index
+    2.Contacto
+    3.Animales Favoritos 
+*/
+
+
 *{
     margin: 0;
     padding: 0;
@@ -28,7 +35,7 @@ body{
 }
 
 #menu-navegacion > ul > li > a:hover{
-    background-color: cadetblue;
+    background-color: rgb(95, 101, 160);
 }
 .flex{
     display: flex;
@@ -80,9 +87,16 @@ h1{
     background-color: rgba(173, 216, 230, 0.466);
     padding: 20px 50px;
 }
+.colores ol li:first-child:hover {
+    color:blue;
+}
 
-.contenedor_dos .habilidades ul > li {
-    color: rgb(235, 20, 20);
+.colores ol li:nth-last-child(2):hover {
+    color:rgb(189, 0, 0);
+}
+
+.colores ol li:nth-last-child(1):hover {
+    color:rgb(129, 0, 189);
 }
 
 .sobre_mi, .links{
@@ -107,7 +121,8 @@ footer{
 }
 
 
-/* contacto */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+2. contacto */
 
 button {
     color: #ffffff;
@@ -128,7 +143,6 @@ button:hover, button:active, button:focus {
   
 .contacto {
     margin: auto;
-    margin-top: 3%;
     display: flex;
     max-width: 905px;
     background-color: #ffffff;
@@ -153,7 +167,7 @@ button:hover, button:active, button:focus {
 }
 
 .izquierda form{
-   padding: 30px;
+   padding: 25px;
 }
 
 .nombre input, .celular input, .correo input{
@@ -161,42 +175,73 @@ button:hover, button:active, button:focus {
     border: 0;
     border-bottom: 2px solid #f0f0f0; 
 }
-.nombre input:focus, .celular input:focus, .correo input:focus {
+
+ input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.nombre input:focus, .celular input:focus, .correo input:focus, textarea:focus{
+    
     outline: none;
     border-color: #fbcf34;
- }
+}
+.label_radio{
+    padding: 20px ;
+}
+
+.genero input, .lenguaje input{
+    margin-left: 5%;
+}
 
 
 
-/* Animales favoritos */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+3. Animales favoritos */
 
+
+#animales{
+    background-image: url(../image/body.png);
+}
 .flex_contenedor{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 10%;
+    margin: 20px 15%;
 }
 
 .flex_contenedor div{
-    background-color: #ffffff;
-    width: 200px;
+    background-color: #ffffffb7;
+    width: 201px;
     margin: 20px 30px;
     font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.377);
 }
 
 .flex_contenedor div img{
-    margin: 0;
     width: 100%;
 }
-.flex_contenedor div h2{
-    text-align: center;
+
+.flex_contenedor div a{
+   font-size: 15px;
+   width: 100%;
+   padding: 10px 5px;
 }
 
-.flex_contenedor div strong{
-  padding: 0px 20px;
+.flex_contenedor div h3{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+.info_animal{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 20px 10px 20px;
+}
+.info_animal strong{
+    padding: 5px;
   font-size: 1rem;
 }
-.flex_contenedor div label{
-    padding: 20px;
-    font-size: 15px;
+.info_animal label{
+    padding: 6px;
+    font-size: 16px;
   }
 
